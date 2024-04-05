@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="7" name="Test_01" parallel="true">
+	<parameter name="browsername" value="Chrome"></parameter>
+	<parameter name="browsername" value="Firefox"></parameter>
+    <classes>
+      <class name="CrossBrowserExercution.LaunchApp_04"/>
+      <class name="CrossBrowserExercution.LaunchApp_03"/>
+      <class name="CrossBrowserExercution.LaunchApp_02"/>
+      <class name="CrossBrowserExercution.LaunchApp_01"/>
+      <class name="CrossBrowserExercution.LaunchApp_07"/>
+      <class name="CrossBrowserExercution.LaunchApp_06"/>
+      <class name="CrossBrowserExercution.LaunchApp_05"/>
+    </classes>
+  </test> <!-- Test -->
+
+<test thread-count="7" name="Test_02" parallel="true">
+	<parameter name="browsername" value="Firefox"></parameter>
+    <classes>
+      <class name="CrossBrowserExercution.LaunchApp_04"/>
+      <class name="CrossBrowserExercution.LaunchApp_03"/>
+      <class name="CrossBrowserExercution.LaunchApp_02"/>
+      <class name="CrossBrowserExercution.LaunchApp_01"/>
+      <class name="CrossBrowserExercution.LaunchApp_07"/>
+      <class name="CrossBrowserExercution.LaunchApp_06"/>
+      <class name="CrossBrowserExercution.LaunchApp_05"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
